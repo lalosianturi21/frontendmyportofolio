@@ -8,4 +8,8 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
+  server: {
+    host: '0.0.0.0', // Membuat server bisa diakses dari luar
+    port: 3000,       // Opsional, sesuaikan dengan port yang kamu inginkan
+  }
 })

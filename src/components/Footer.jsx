@@ -1,10 +1,19 @@
 import React from 'react'
 
+
 const Footer = () => {
   return (
-    <div>
-      <h1>Ini merupakan halaman footer</h1>
-    </div>
+        <footer className="footer">
+            <p className="footer__title">Lalo</p>
+            <div className="footer__social">
+                <a href="#" className="footer__icon"><i className='bx bxl-facebook' ></i></a>
+                <a href="#" className="footer__icon"><i className='bx bxl-instagram' ></i></a>
+                <a href="#" className="footer__icon"><i className='bx bxl-twitter' ></i></a>
+            </div>
+            <p className="footer__copy">&#169; Bedimcode. All rigths reserved</p>
+        </footer>
+
+    
   )
 }
 
