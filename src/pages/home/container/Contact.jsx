@@ -1,9 +1,10 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; // Import CSS Toastify
 
 const Contact = () => {
   const form = useRef();
-  const [statusMessage, setStatusMessage] = useState('');
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -12,11 +13,17 @@ const Contact = () => {
       .sendForm('service_h6i055h', 'template_r596eum', form.current, 'n2qVOOwl2AhovvL9S')
       .then(
         () => {
-          setStatusMessage('Message sent successfully! ✅');
-          form.current.reset(); // Mengosongkan form setelah berhasil
+          toast.success('✅ Message sent successfully!', {
+            position: 'top-right',
+            autoClose: 3000, // Notifikasi menghilang dalam 3 detik
+          });
+          form.current.reset(); // Reset form setelah berhasil
         },
         (error) => {
-          setStatusMessage('Failed to send message. ❌');
+          toast.error('❌ Failed to send message.', {
+            position: 'top-right',
+            autoClose: 3000,
+          });
           console.error('Error:', error.text);
         }
       );
@@ -28,16 +35,18 @@ const Contact = () => {
         <h2 className="section-title">Contact</h2>
 
         <div className="contact__container bd-grid">
-          <form ref={form} onSubmit={sendEmail} className="contact__form">
-            <input type="text" placeholder="Name" name="user_name" className="contact__input" required />
-            <input type="email" placeholder="Email" name="user_email" className="contact__input" required />
-            <textarea name="message" cols="30" rows="10" className="contact__input" required></textarea>
-            <button type="submit" className="contact__button button">Send</button>
-          </form>
-
-          {/* Menampilkan status pesan */}
-          {statusMessage && <p className="status-message">{statusMessage}</p>}
+          <div className="form-contact">
+            <form ref={form} onSubmit={sendEmail} className="contact__form">
+              <input type="text" placeholder="Name" name="user_name" className="contact__input" required />
+              <input type="email" placeholder="Email" name="user_email" className="contact__input" required />
+              <textarea name="message" cols="30" rows="10" className="contact__input" required></textarea>
+              <button type="submit" className="contact__button button">Send</button>
+            </form>
+          </div>
         </div>
+
+        {/* Tambahkan ToastContainer agar notifikasi bisa ditampilkan */}
+        <ToastContainer />
       </section>
     </main>
   );

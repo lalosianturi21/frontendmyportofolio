@@ -1,5 +1,5 @@
 import React from 'react';
-import pictureAbout from '../../../assets/about.jpg';
+import pictureAbout from '../../../assets/about.png';
 import "../../../css/style.css";
 import MainLayout from '../../../components/MainLayout';
 
@@ -13,7 +13,7 @@ const About = () => {
             <img src={pictureAbout} alt=''></img>
         </div>
         <div>
-        <h2 className="about__subtitle">I'am Marlon</h2>
+        <h2 className="about__subtitle">I'am Tio Fulalo Simatupang</h2>
             <p className="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>           
                 </div>       
     </div>

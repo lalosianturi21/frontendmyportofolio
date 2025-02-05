@@ -9,7 +9,7 @@ const Hero = () => {
             <div className="home__data">
                 <h1 className='home__title'>
                     Hi, <br /> I&apos;m  
-                <span className='home__title-color'> Marlon</span>
+                <span className='home__title-color'> Tio Fulalo</span>
                 <br /> Web Developer
                 </h1>
                 <a href='#' className='button'>Contact</a>
