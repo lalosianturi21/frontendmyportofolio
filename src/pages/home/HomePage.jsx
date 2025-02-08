@@ -5,6 +5,8 @@ import About from './container/About'
 import Skills from './container/Skills'
 import Project from './container/Project'
 import Contact from './container/Contact'
+import Articles from './container/Articles'
+
 
 const HomePage = () => {
   return (
@@ -13,6 +15,7 @@ const HomePage = () => {
        <About /> 
        <Skills /> 
        <Project />
+       <Articles />
        <Contact /> 
     </MainLayout>
   )

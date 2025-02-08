@@ -1,1 +1,0 @@
-import HeroImage from "../assets/perfil.png";

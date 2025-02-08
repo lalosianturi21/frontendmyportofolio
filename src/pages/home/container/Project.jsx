@@ -59,7 +59,7 @@ const Project = () => {
                                 <h3 className="project-sub-title">{project.subTitle}</h3>
                                 <p className="project-desc">{project.description}</p>
                                 <div className="buttons">
-                                    <a href="#" className="primary-btns">Know More</a>
+                                    <a href="#" className="primary-btns">Github</a>
                                     <a href="#" className="primary-btns outline external-link">
                                         <span>Preview</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">

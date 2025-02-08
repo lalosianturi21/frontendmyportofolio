@@ -9,7 +9,7 @@ export default defineConfig({
     tailwindcss()
   ],
   server: {
-    host: '0.0.0.0', // Membuat server bisa diakses dari luar
-    port: 3000,       // Opsional, sesuaikan dengan port yang kamu inginkan
+    host: '0.0.0.0', 
+    port: 3000,      
   }
 })

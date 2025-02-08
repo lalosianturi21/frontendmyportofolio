@@ -59,7 +59,7 @@ const Skills = () => {
                     </div>
                 </div>
                 <div>              
-                        <img src={pictureSkills} alt="" class="skills__img"></img>
+                        <img src={pictureSkills} alt="" className="skills__img"></img>
                     </div>
             </div>
         </div>

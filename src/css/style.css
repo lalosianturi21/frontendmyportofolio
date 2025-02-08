@@ -53,6 +53,7 @@ body {
 
 h1, h2, p {
   margin: 0;
+  color: white;
 }
 
 p {
@@ -175,6 +176,42 @@ img {
   cursor: pointer;
 }
 
+/* Dropdown menu */
+.nav__item .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--second-color);
+  padding: 0.5rem 1rem;
+  list-style: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  z-index: 10;
+}
+
+.nav__item:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+  display: block;
+  font-size: 16px;
+}
+
+.dropdown-item:hover {
+  background-color: var(--first-color);
+  border-radius: 0.25rem;
+}
+
+.nav__item {
+  position: relative;
+}
+
+
 /*Active menu*/
 .active-link::after {
   position: absolute;
@@ -185,6 +222,8 @@ img {
   top: 2rem;
   background-color: var(--first-color);
 }
+
+
 
 /*=== Show menu ===*/
 .show {
@@ -410,7 +449,7 @@ span.skills__percentage {
 .contact::after {
   position: absolute;
   content: "";
-  width: 1590px;
+  width: 1890px;
   height: 1152px;
   right: 70px;
   background: url(../assets/blur3.png);
@@ -623,7 +662,9 @@ span.skills__percentage {
 }
 
 .primary-btns:hover {
-  background-color: var(--first-color);
+  background-color: transparent;
+  border: 2px solid var(--first-color);
+  color: white;
 }
 
 .buttons .primary-btns.outline {
@@ -661,10 +702,85 @@ span.skills__percentage {
   }
 }
 
+/* Login */
+.login {
+  margin-top: 120px;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.login::after {
+  position: absolute;
+  content: "";
+  width: 1520px;
+  height: 942px;
+  right: 70px;
+  background: url(../assets/blur.png);
+  top: -350px;
+  z-index: -10;
+  opacity: 1;
+ 
+}
+
+.box-login {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+/* Profile Page */
+.profilepage {
+  margin-top: 120px;
+  margin-bottom: 100px;
+  position: relative;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.profile {
+  position: relative;
+}
+
+.profile::after {
+  position: absolute;
+  content: "";
+  width: 1520px;
+  height: 942px;
+  right: 70px;
+  background: url(../assets/blur.png);
+  top: -350px;
+  z-index: -10;
+  opacity: 1;
+ 
+}
+
+.button-sign {
+  background: #6414fc;
+}
+
+.text-register {
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
   #projects .items {
     flex: 1 1 100%; /* 1 kolom untuk perangkat kecil */
   }
+  
+/* Login */
+.login {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 }
 
 @media (max-width: 450px) {
@@ -760,7 +876,7 @@ span.skills__percentage {
     display: none;
   }
   .nav__link {
-    color: var(--second-color);
+    color: white;
   }
   .home {
     padding: 8rem 0 2rem;
@@ -785,6 +901,7 @@ span.skills__percentage {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
   }
+  /* Login */
 }
 @media screen and (min-width: 992px) {
   .home {
