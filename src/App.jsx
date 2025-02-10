@@ -7,6 +7,9 @@ import RegisterPage from './pages/register/RegisterPage'
 import ProfilePage from './pages/profile/ProfilePage'
 import ProjectPage from './pages/project/ProjectPage'
 import AdminLayout from './pages/admin/AdminLayout'
+import Admin from './pages/admin/screens/Admin'
+import Comments from './pages/admin/screens/comments/Comments'
+import ManagePosts from './pages/admin/screens/posts/ManagePosts'
 
 
 
@@ -20,7 +23,11 @@ function App() {
       <Route path="/register" element={<RegisterPage />} />
       <Route path="/profile" element={<ProfilePage />} />
       <Route path="/project" element={<ProjectPage />} />
-      <Route path="/admin" element={<AdminLayout />} />
+      <Route path="/admin" element={<AdminLayout />} >
+      <Route index element={<Admin />} />
+      <Route path="comments" element={<Comments />} />
+      <Route path="posts/manage" element={<ManagePosts />} />
+      </Route>
 
     </Routes>
    </div>

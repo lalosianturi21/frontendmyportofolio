@@ -14,13 +14,13 @@ const NavItemCollapse = ({ title, children, icon, name, activeNavName, setActive
     <div className="navitemcollapse rounded-lg transition-all duration-300">
       <button
         className={`w-full flex items-center justify-between text-left text-lg px-4 py-3 rounded-lg 
-        ${name === activeNavName ? "bg-blue-500 text-white" : "text-gray-700 hover:bg-gray-200"}`}
+        ${name === activeNavName ? "bg-purple-500 text-white" : "text-white bg-purple-600 hover:bg-orange-500"}`}
         onClick={() => {
           setActiveNavName(name);
           setIsOpen(!isOpen);
         }}
       >
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2">
           {icon}
           <span className="font-medium">{title}</span>
         </div>
