@@ -113,7 +113,7 @@ const ManagePosts = () => {
             </button>
             <Link
               to={`/admin/posts/manage/edit/${post?.slug}`}
-              className="px-3 py-2 text-white text-xs font-semibold rounded-lg transition duration-200 bg-yellow-500 hover:bg-yellow-600"
+              className="editbutton px-3 py-2 text-white text-xs font-semibold rounded-lg transition duration-200 bg-yellow-500 hover:bg-yellow-600"
             >
               Edit
             </Link>

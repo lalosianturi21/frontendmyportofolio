@@ -73,7 +73,7 @@ const DataTable = ({
                     </tr>
                   ) : data?.length === 0 ? (
                     <tr>
-                      <td colSpan={5} className="text-center py-10 w-full">
+                      <td colSpan={5} className="text-center py-10 w-full text-white">
                         No records found
                       </td>
                     </tr>

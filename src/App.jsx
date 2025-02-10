@@ -10,6 +10,7 @@ import AdminLayout from './pages/admin/AdminLayout'
 import Admin from './pages/admin/screens/Admin'
 import Comments from './pages/admin/screens/comments/Comments'
 import ManagePosts from './pages/admin/screens/posts/ManagePosts'
+import EditPost from './pages/admin/screens/posts/EditPost'
 
 
 
@@ -27,6 +28,7 @@ function App() {
       <Route index element={<Admin />} />
       <Route path="comments" element={<Comments />} />
       <Route path="posts/manage" element={<ManagePosts />} />
+      <Route path="posts/manage/edit/:slug" element={<EditPost />} />
       </Route>
 
     </Routes>

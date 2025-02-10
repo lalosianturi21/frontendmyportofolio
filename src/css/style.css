@@ -942,6 +942,36 @@ span.skills__percentage {
 }
 
 
+.editbutton {
+  font-size: 12px;
+}
+
+
+/* Profile Page */
+.bg-edit {
+  position: relative;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.bg-edit input {
+  color: white;
+}
+
+.bg-edit label{
+  color: white;
+}
+
+.your-editor-class p, h1, h2, h3, h4, h5, h6{
+  color: white;
+}
+
+
 @media (max-width: 1025px) {
   .img-header {
     display: block;
@@ -953,12 +983,10 @@ span.skills__percentage {
     flex: 1 1 100%;
     /* 1 kolom untuk perangkat kecil */
   }
-
-
   /* Login */
   .login {
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 70px;
+    margin-bottom: 70px;
   }
 }
 
