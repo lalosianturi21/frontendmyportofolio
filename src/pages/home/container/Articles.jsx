@@ -1,7 +1,12 @@
+import React from "react";
 import { useQuery } from '@tanstack/react-query'
-import React from 'react'
 import { getAllPosts } from '../../../services/index/posts'
 import { toast } from 'react-toastify'
+import ErrorMessage from '../../../components/ErrorMessage'
+import { FaArrowRight } from "react-icons/fa";
+import { Link } from 'react-router-dom'
+import ArticleCard from "../../../components/ArticleCard";
+import ProjectCard from "../../../components/ProjectCard";
 
 const Articles = () => {
     const { data, isLoading, isError } = useQuery({
@@ -12,11 +17,36 @@ const Articles = () => {
             console.log(error)
         }
     });
-  return (
-    <div>
-      <h1>Ini halaman Articles</h1>
-    </div>
-  )
-}
+  
+    return (
+        <section className="flex flex-col container mx-auto px-5 py-10">
+                   <div className='myproject' id='projects'>
+            <div className="containers">
+                <h2 className='section-title'>Projects</h2>
+                <div className="all-items">
+                {isError ? (
+                    <ErrorMessage message="Couldn't fetch the posts data" />
+                ) : (
+                    data?.data.map((post) => (
+                        <ProjectCard
+                            key={post._id}
+                            post={post}
+                            className="w-full md:w-[calc(50%-20px)] lg:w-[calc(33.33%-21px)]"
+                        />
+                    ))
+                )}
+            </div>
+            </div>
+            </div>
+            <Link
+                to="/project"
+                className="mx-auto flex items-center gap-x-2 font-bold text-primary border-2 border-primary px-6 py-3 rounded-lg"
+            >
+                <span>More articles</span>
+                <FaArrowRight className="w-3 h-3" />
+            </Link>
+            </section>
+    );
+};
 
-export default Articles
+export default Articles;

@@ -5,6 +5,8 @@ import About from './pages/home/container/About'
 import LoginPage from './pages/login/LoginPage'
 import RegisterPage from './pages/register/RegisterPage'
 import ProfilePage from './pages/profile/ProfilePage'
+import ProjectPage from './pages/project/ProjectPage'
+import AdminLayout from './pages/admin/AdminLayout'
 
 
 
@@ -17,6 +19,9 @@ function App() {
       <Route path="/login" element={<LoginPage />} />
       <Route path="/register" element={<RegisterPage />} />
       <Route path="/profile" element={<ProfilePage />} />
+      <Route path="/project" element={<ProjectPage />} />
+      <Route path="/admin" element={<AdminLayout />} />
+
     </Routes>
    </div>
   )

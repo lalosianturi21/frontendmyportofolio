@@ -11,10 +11,13 @@ import Articles from './container/Articles'
 const HomePage = () => {
   return (
     <MainLayout>
+       <div className="bg-blue-500 text-white p-5">
+      Tailwind Berhasil!
+    </div>
        <Hero /> 
        <About /> 
        <Skills /> 
-       <Project />
+       {/* <Project /> */}
        <Articles />
        <Contact /> 
     </MainLayout>
