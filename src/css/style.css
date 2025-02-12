@@ -574,7 +574,7 @@ span.skills__percentage {
 }
 
 .footer__title {
-  font-size: 2rem;
+  font-size: 15px;
   margin-bottom: var(--mb-4);
 }
 
@@ -972,6 +972,22 @@ span.skills__percentage {
   color: white;
 }
 
+.projectdetail {
+  position: relative;
+}
+
+.projectdetail::after {
+  position: absolute;
+  content: "";
+  width: 1520px;
+  height: 942px;
+  right: 70px;
+  background: url(../assets/blur.png);
+  top: -350px;
+  z-index: -10;
+  opacity: 1;
+
+}
 
 @media (max-width: 1025px) {
   .img-header {
