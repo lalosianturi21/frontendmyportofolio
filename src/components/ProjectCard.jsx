@@ -13,7 +13,7 @@ const ProjectCard = ({ post }) => {
                             <div className="img-project">
                                 <img src={
                                     post.photo
-                                        ? stables.UPLOAD_FOLDER_BASE_URL + post.photo
+                                        ? post.photo
                                         : images.samplePostImage
                                 } alt="title" />
                             </div>

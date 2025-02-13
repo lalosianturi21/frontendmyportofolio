@@ -61,7 +61,7 @@ const Comments = () => {
         <tr key={comment._id} className="border-b hover:bg-purple-600 transition duration-200">
           <td className="px-6 py-4 text-sm flex items-center">
             <img
-              src={comment?.user?.avatar ? `${stables.UPLOAD_FOLDER_BASE_URL}${comment?.user?.avatar}` : images.userImage}
+              src={comment?.user?.avatar ? `${comment?.user?.avatar}` : images.userImage}
               alt={comment?.user?.name}
               className="w-10 h-10 rounded-full mr-3 object-cover"
             />

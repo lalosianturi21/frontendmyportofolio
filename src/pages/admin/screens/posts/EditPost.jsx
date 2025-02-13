@@ -84,7 +84,7 @@ const EditPost = () => {
         return file;
       };
       const picture = await urlToObject(
-        stables.UPLOAD_FOLDER_BASE_URL + data?.photo
+        data?.photo
       );
 
       updatedData.append("postPicture", picture);
@@ -117,7 +117,7 @@ const EditPost = () => {
               {photo ? (
                 <img src={URL.createObjectURL(photo)} alt={data?.title} className="rounded-lg w-full" />
               ) : initialPhoto ? (
-                <img src={stables.UPLOAD_FOLDER_BASE_URL + data?.photo} alt={data?.title} className="rounded-lg w-full" />
+                <img src={data?.photo} alt={data?.title} className="rounded-lg w-full" />
               ) : (
                 <div className="w-full h-48 bg-gray-200 flex justify-center items-center rounded-lg">
                   <HiOutlineCamera className="text-gray-600 w-10 h-10" />
