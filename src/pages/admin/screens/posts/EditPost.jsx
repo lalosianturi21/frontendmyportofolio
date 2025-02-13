@@ -73,35 +73,32 @@ const EditPost = () => {
 
   const handleUpdatePost = async () => {
     let updatedData = new FormData();
-
-    if (!initialPhoto && photo) {
+  
+    if (photo) {
       updatedData.append("postPicture", photo);
-    } else if (initialPhoto && !photo) {
+    } else if (initialPhoto) {
+      // Konversi URL gambar lama ke File
       const urlToObject = async (url) => {
         let response = await fetch(url);
         let blob = await response.blob();
-        const file = new File([blob], initialPhoto, { type: blob.type });
-        return file;
+        return new File([blob], "previous-image.jpg", { type: blob.type });
       };
-      const picture = await urlToObject(
-        data?.photo
-      );
-
-      updatedData.append("postPicture", picture);
+      const oldPhoto = await urlToObject(data?.photo);
+      updatedData.append("postPicture", oldPhoto);
     }
-
+  
     updatedData.append(
       "document",
       JSON.stringify({ body, categories, title, slug: postSlug, caption })
     );
-
+  
     mutateUpdatePostDetail({
       updatedData,
       slug,
       token: userState.userInfo.token,
     });
   };
-
+  
   return (
     <>
       <ToastContainer position="top-right" autoClose={3000} hideProgressBar />
