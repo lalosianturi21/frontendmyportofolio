@@ -110,7 +110,7 @@ const EditPost = () => {
       ) : (
         <div className="space-y-6">
           <div className="flex flex-col items-center">
-            <label htmlFor="postPicture" className="cursor-pointer">
+            <label htmlFor="postPicture" >
               {photo ? (
                 <img src={URL.createObjectURL(photo)} alt={data?.title} className="rounded-lg w-full" />
               ) : initialPhoto ? (

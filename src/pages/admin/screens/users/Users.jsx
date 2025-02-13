@@ -97,7 +97,7 @@ const Users = () => {
           <td className="px-5 py-5 text-sm border-b border-gray-200">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <a href="/" className="relative block">
+                <a href="/">
                   <img
                     src={
                       user?.avatar
