@@ -32,6 +32,7 @@ function App() {
             size: 48, // small | medium | large | number
             dragAndDrop: true,
             iconColor: 'white',
+            customIconSrc: 'https://img.icons8.com/material-outlined/24/FFFFFF/message-bot.png'
           },
           tooltip: {
             showTooltip: true,
