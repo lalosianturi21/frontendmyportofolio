@@ -1,5 +1,6 @@
 import React from 'react'
 import pictureSkills from '../../../assets/skills.jpg';
+import { SiLaravel } from "react-icons/si";
 
 const Skills = () => {
     return (
@@ -47,6 +48,15 @@ const Skills = () => {
                         <div className="skills__bar skills__project">
                         </div>
 
+                    </div>
+
+                    <div className="skills__data">
+                        <div className="skills__names">
+                            <SiLaravel className="skills__icon" />
+                            <span className="skills__name">Laravel</span>
+                        </div>
+                        <div className="skills__bar skills__project">
+                        </div>
                     </div>
 
                     <div className="skills__data">

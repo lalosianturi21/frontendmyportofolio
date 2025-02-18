@@ -271,18 +271,15 @@ img {
 
 
 
-.l-main::after {
-  position: absolute;
-  content: "";
-  width: 1520px;
-  height: 942px;
-  right: 70px;
-  background: url(../assets/blur.png);
-  top: -350px;
-}
+
 
 .home__data {
   align-self: center;
+}
+
+.home__data a{
+  position: relative;
+  z-index: 999;
 }
 
 .home__title {
@@ -300,6 +297,11 @@ img {
 .home__social {
   display: flex;
   flex-direction: column;
+}
+
+.home__social a{
+  position: relative;
+  z-index: 999;
 }
 
 .home__social-icon {
@@ -320,6 +322,9 @@ img {
   width: 260px;
 }
 
+.home__img svg {
+  z-index: -999;
+}
 .home__blob {
   fill: var(--first-color);
 }
@@ -973,7 +978,10 @@ span.skills__percentage {
 
 }
 
-
+img.skills__img {
+  height: 470px;
+  object-fit: cover;
+}
 
 @media (max-width: 1025px) {
   .img-header {
@@ -990,6 +998,9 @@ span.skills__percentage {
   .login {
     margin-top: 70px;
     margin-bottom: 70px;
+  }
+  img.skills__img{
+    height: auto;
   }
 }
 

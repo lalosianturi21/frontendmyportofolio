@@ -32,11 +32,6 @@ function App() {
             size: 48, // small | medium | large | number
             dragAndDrop: true,
             iconColor: 'white',
-            autoWindowOpen: {
-              autoOpen: true, //parameter to control automatic window opening
-              openDelay: 2, // Optional parameter for delay time in seconds
-              autoOpenOnMobile: false, //parameter to control automatic window opening in mobile
-            },
           },
           tooltip: {
             showTooltip: true,
