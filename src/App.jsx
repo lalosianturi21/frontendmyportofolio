@@ -15,10 +15,15 @@ import Categories from "./pages/admin/screens/categories/Categories";
 import EditCategories from "./pages/admin/screens/categories/EditCategories";
 import Users from "./pages/admin/screens/users/Users";
 import ArticleDetailPage from './pages/articleDetail/ArticleDetailPage'
+import { BubbleChat } from 'flowise-embed-react'
 
 function App() {
   return (
    <div className='App font-opensans'>
+    <BubbleChat
+            chatflowid="9798275a-dae0-4dd5-a092-760490135d97"
+            apiHost="https://flowiseportofolio.zeabur.app"
+        />
     <Routes>
       <Route index path='/' element={<HomePage />}/>
       <Route index path='/about' element={<About />}/>
