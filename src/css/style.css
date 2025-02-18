@@ -153,7 +153,9 @@ img {
     padding: 2rem;
     background-color: var(--second-color);
     transition: 0.5s;
-  }
+    z-index: 1000; /* Pastikan lebih tinggi dari home__data a */
+}
+
 
   .button-search {
     width: 100%;
@@ -279,7 +281,7 @@ img {
 
 .home__data a{
   position: relative;
-  z-index: 999;
+  z-index: 10;
 }
 
 .home__title {
@@ -301,7 +303,7 @@ img {
 
 .home__social a{
   position: relative;
-  z-index: 999;
+  z-index: 10;
 }
 
 .home__social-icon {
@@ -860,6 +862,9 @@ span.skills__percentage {
   position: relative;
 }
 
+.articledetail {
+  margin-top: 120px;
+}
 
 
 .title-project {
