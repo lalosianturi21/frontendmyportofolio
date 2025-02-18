@@ -21,7 +21,7 @@ function App() {
   return (
    <div className='App font-opensans'>
     <BubbleChat
-            chatflowid="9798275a-dae0-4dd5-a092-760490135d97"
+            chatflowid="8fcd4b23-f525-44af-9ddb-fbd5e4dbfa60"
             apiHost="https://flowiseportofolio.zeabur.app"
         />
     <Routes>
