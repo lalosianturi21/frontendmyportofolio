@@ -272,6 +272,15 @@ img {
 }
 
 
+.l-main::after {
+  position: absolute;
+  content: "";
+  width: 1520px;
+  height: 942px;
+  right: 70px;
+  background: url(../assets/blur.png);
+  top: -350px;
+}
 
 
 
