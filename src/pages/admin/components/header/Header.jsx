@@ -87,10 +87,10 @@ const Header = () => {
                 <NavItem title="Dashboard" link="/admin" icon={<AiFillDashboard className="text-xl" />} name="dashboard" activeNavName={activeNavName} setActiveNavName={setActiveNavName} />
                 <NavItem title="Comments" link="/admin/comments" icon={<FaComments className="text-xl" />} name="comments" activeNavName={activeNavName} setActiveNavName={setActiveNavName} />
 
-                <NavItemCollapse title="Posts" icon={<MdDashboard className="text-xl" />} name="posts" activeNavName={activeNavName} setActiveNavName={setActiveNavName}>
+                <NavItemCollapse title="Projects" icon={<MdDashboard className="text-xl" />} name="posts" activeNavName={activeNavName} setActiveNavName={setActiveNavName}>
                   {/* Manage All Posts */}
                   <Link to="/admin/posts/manage" className="flex items-center gap-2 px-4 py-2 text-[15px] font-medium text-gray-700 rounded-md transition">
-                    <span className="text-lg">📋</span> Manage all posts
+                    <span className="text-lg">📋</span> Manage all projects
                   </Link>
 
                   {/* Add New Post Button */}
@@ -100,7 +100,7 @@ const Header = () => {
                       ${isLoadingCreatePost ? "bg-gray-300 text-gray-500 cursor-not-allowed" : "text-gray-700"}`}
                     onClick={handleCreateNewPost}
                   >
-                    <span className="text-lg">✨</span> Add New Post
+                    <span className="text-lg">✨</span> Add New Project
                   </button>
 
                   {/* Categories */}

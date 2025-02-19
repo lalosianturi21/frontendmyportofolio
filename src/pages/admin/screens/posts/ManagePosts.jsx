@@ -34,8 +34,8 @@ const ManagePosts = () => {
 
   return (
     <DataTable
-      pageTitle="Manage Posts"
-      dataListName="Posts"
+      pageTitle="Manage Projects"
+      dataListName="Projects"
       searchInputPlaceHolder="Post title..."
       searchKeywordOnSubmitHandler={submitSearchKeywordHandler}
       searchKeywordOnChangeHandler={searchKeywordHandler}

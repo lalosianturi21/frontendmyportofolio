@@ -988,6 +988,68 @@ img.skills__img {
   object-fit: cover;
 }
 
+/* DASHBOARD */
+.admin-dashboard {
+  padding: 20px;
+  text-align: left;
+}
+
+.dashboard-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Flexbox untuk Card Container */
+.admin-cards-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 20px; /* Jarak antar card */
+  flex-wrap: wrap; /* Agar responsif di layar kecil */
+}
+
+/* Styling Card */
+.admin-card {
+  background: #9c14fc;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  width: 300px; /* Lebar Card */
+  color: white;
+  text-align: left;
+}
+
+.admin-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.loading-text {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #f1f1f1;
+}
+
+.total-posts {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+.total-count {
+  font-size: 18px;
+  font-weight: bold;
+}
 @media (max-width: 1025px) {
   .img-header {
     display: block;
@@ -1007,6 +1069,9 @@ img.skills__img {
   img.skills__img{
     height: auto;
   }
+  .admin-cards-container{
+    justify-content: center;
+  }
 }
 
 @media (max-width: 450px) {
@@ -1023,6 +1088,7 @@ img.skills__img {
     margin-bottom: 1rem;
     /* Adds space between stacked buttons */
   }
+
 }
 
 

@@ -16,6 +16,7 @@ import EditCategories from "./pages/admin/screens/categories/EditCategories";
 import Users from "./pages/admin/screens/users/Users";
 import ArticleDetailPage from './pages/articleDetail/ArticleDetailPage';
 import { BubbleChat } from 'flowise-embed-react';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
