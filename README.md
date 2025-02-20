@@ -5,7 +5,8 @@ Ini adalah Portofolio Website Saya, yang menggunakan fitur admin untuk menguploa
 ---
 
 ## 📷 Preview
-![image](https://github.com/user-attachments/assets/156502be-72fe-4c8a-80e2-ef758b0af8da)
+![image](https://github.com/user-attachments/assets/0f954824-0eaa-4e37-9b21-1a271067bb80)
+
 
 
 ---
@@ -49,10 +50,12 @@ Pergi ke github https://github.com/lalosianturi21/backendmyportofolio.git dan la
 
 ## 🎯 Project Results
 Halaman Portofolio
-![image](https://github.com/user-attachments/assets/8176830c-d2d6-4bc2-a035-755de89bcabb)
+![image](https://github.com/user-attachments/assets/2e02cead-d034-4b97-a44a-6f37fc1ace89)
+
 
 Halaman Admin
-![image](https://github.com/user-attachments/assets/39794f10-9c14-4cc3-ba5e-6202db1e781a)
+![image](https://github.com/user-attachments/assets/4c96fc0f-114e-42f0-ae1f-a7ffa143123f)
+
 
 
 
