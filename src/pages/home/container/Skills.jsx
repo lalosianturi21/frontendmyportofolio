@@ -1,5 +1,5 @@
 import React from 'react'
-import pictureSkills from '../../../assets/skills.jpg';
+import pictureSkills from '../../../assets/skills.png';
 import { SiLaravel } from "react-icons/si";
 
 const Skills = () => {
