@@ -1,4 +1,4 @@
-# 📌 Kedai Om Jhon
+# 📌 PORTOFOLIO WEBSITE 
 
 Ini adalah Portofolio Website Saya, yang menggunakan fitur admin untuk mengupload project dan Fitur ChatBot yang menggunakan Flowise AI
 
@@ -11,10 +11,10 @@ Ini adalah Portofolio Website Saya, yang menggunakan fitur admin untuk menguploa
 ---
 
 ## 🚀 Features
-- ✅ Login dengan akun google
-- ✅ Tambah Produk
-- ✅ Fitur Cart
-- ✅ Melakukan Pembayaran secara online yang terintegrasi dengan midtrans 
+- ✅ Login dan register
+- ✅ Menampilkan Halaman Beranda
+- ✅ Menggunakan CHATBOT dari Flowise AI
+- ✅ Terdapat fitur Admin untuk mengelola project, user, categories, dan comment
 
 ---
 
@@ -24,7 +24,7 @@ Ikuti langkah-langkah berikut untuk menginstal proyek ini secara lokal:
 
 ```bash
 # Clone repository
-git clone https://github.com/lalosianturi21/Kedai-Om-Jhon.git
+git clone https://github.com/lalosianturi21/frontendmyportofolio.git
 
 # Masuk ke direktori proyek
 cd nama-folder
@@ -33,29 +33,7 @@ cd nama-folder
 npm install
 
 # Copy atau Buat file .env pada root project dan masukkan konfigurasi nya
-NEXT_PUBLIC_APP_URL="http://localhost:3000"
-
-GOOGLE_CLIENT_ID=
-GOOGLE_CLIENT_SECRET=
-
-NEXT_AUTH_SECRET=
-
-UPLOADTHING_SECRET=
-UPLOADTHING_APP_ID=
-
-MIDTRANS_CLIENT_KEY=
-MIDTRANS_SERVER_KEY=
-
-DATABASE_URL=
-
-# Generate Prisma
-npx prisma generate
-
-# Push Database Schema
-npx prisma db push
-
-# Seeding Data Kategori
-npx prisma db seed
+VITE_API_BASE_URL=
 
 # Jalankan aplikasi
 npm run dev
@@ -63,6 +41,10 @@ npm run dev
 ```
 
 ---
+
+## 🎯 Jalankan Project Backend
+Pergi ke github https://github.com/lalosianturi21/backendmyportofolio.git dan lakukan Clone project tersebut
+
 
 
 ## 🎯 Project Results
