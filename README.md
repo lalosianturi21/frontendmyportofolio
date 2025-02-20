@@ -42,29 +42,17 @@ npm run dev
 
 ---
 
-## 🎯 Jalankan Project Backend
+## Jalankan Project Backend
 Pergi ke github https://github.com/lalosianturi21/backendmyportofolio.git dan lakukan Clone project tersebut
 
 
 
 ## 🎯 Project Results
-Halaman Awal 
+Halaman Portofolio
 ![image](https://github.com/user-attachments/assets/8176830c-d2d6-4bc2-a035-755de89bcabb)
 
-Halaman Produk
+Halaman Admin
 ![image](https://github.com/user-attachments/assets/39794f10-9c14-4cc3-ba5e-6202db1e781a)
-
-Tampilan Cart 
-![image](https://github.com/user-attachments/assets/d0dc92e5-e570-4df1-ad7d-e63530fe21e3)
-
-Halaman Chcckout Cart
-![image](https://github.com/user-attachments/assets/6aaa4078-0057-414f-868e-c078b1858de2)
-
-Melakukan Transaksi menggunakan midtrans
-![image](https://github.com/user-attachments/assets/e3daa46a-cd74-4af8-b116-3443c9872d1a)
-
-Tampilan Hasil Pemesanan 
-![image](https://github.com/user-attachments/assets/a637c389-5701-4f10-aa77-5c8e72a5ef8a)
 
 
 
