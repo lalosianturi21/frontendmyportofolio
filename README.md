@@ -1,71 +1,84 @@
-# 📌 PORTOFOLIO WEBSITE 
+# 📌 Portfolio Website
 
-Ini adalah Portofolio Website Saya, yang menggunakan fitur admin untuk mengupload project dan Fitur ChatBot yang menggunakan Flowise AI
+Selamat datang di **Portfolio Website** saya! Website ini memiliki fitur **Admin** untuk mengelola proyek serta **ChatBot** yang menggunakan **Flowise AI**.
 
 ---
 
 ## 📷 Preview
-![image](https://github.com/user-attachments/assets/0f954824-0eaa-4e37-9b21-1a271067bb80)
 
+### Halaman Portofolio
+![Portfolio Page](https://github.com/user-attachments/assets/2e02cead-d034-4b97-a44a-6f37fc1ace89)
 
-
----
-
-## 🚀 Features
-- ✅ Login dan register
-- ✅ Menampilkan Halaman Beranda
-- ✅ Menggunakan CHATBOT dari Flowise AI
-- ✅ Terdapat fitur Admin untuk mengelola project, user, categories, dan comment
+### Halaman Admin
+![Admin Page](https://github.com/user-attachments/assets/4c96fc0f-114e-42f0-ae1f-a7ffa143123f)
 
 ---
 
-## 🛠 Installation
+## 🚀 Fitur
+✅ Login dan Register <br>
+✅ Halaman Beranda <br>
+✅ ChatBot berbasis **Flowise AI** <br>
+✅ Admin Panel untuk mengelola **Project, User, Categories, dan Comments**
 
-Ikuti langkah-langkah berikut untuk menginstal proyek ini secara lokal:
+---
 
+## 🛠 Instalasi
+
+Ikuti langkah-langkah berikut untuk menjalankan proyek ini secara lokal:
+
+### 1️⃣ Clone Repository
 ```bash
 # Clone repository
 git clone https://github.com/lalosianturi21/frontendmyportofolio.git
 
 # Masuk ke direktori proyek
-cd nama-folder
+cd frontendmyportofolio
+```
 
-# Install dependencies
+### 2️⃣ Install Dependencies
+```bash
 npm install
+```
 
-# Copy atau Buat file .env pada root project dan masukkan konfigurasi nya
+### 3️⃣ Konfigurasi Environment
+Buat atau salin file **.env** di root proyek, kemudian tambahkan konfigurasi berikut:
+```env
 VITE_API_BASE_URL=
+```
 
-# Jalankan aplikasi
+### 4️⃣ Jalankan Aplikasi
+```bash
 npm run dev
-
 ```
 
 ---
 
-## Jalankan Project Backend
-Pergi ke github https://github.com/lalosianturi21/backendmyportofolio.git dan lakukan Clone project tersebut
-
-
-
-## 🎯 Project Results
-Halaman Portofolio
-![image](https://github.com/user-attachments/assets/2e02cead-d034-4b97-a44a-6f37fc1ace89)
-
-
-Halaman Admin
-![image](https://github.com/user-attachments/assets/4c96fc0f-114e-42f0-ae1f-a7ffa143123f)
-
-
-
-
-## 🤝 Contributing
-Jika ingin berkontribusi, silakan buat **pull request** atau hubungi saya.
+## 🔧 Menjalankan Backend
+Untuk menjalankan backend, clone repository berikut:
+🔗 [Backend Repository](https://github.com/lalosianturi21/backendmyportofolio.git)
+```bash
+git clone https://github.com/lalosianturi21/backendmyportofolio.git
+```
+Ikuti petunjuk di dalam repository backend untuk instalasi lebih lanjut.
 
 ---
 
-## 📞 Contact
-Jika ada pertanyaan, hubungi:
-- Email: fulalotio@gmail.com
-- LinkedIn: Tio Fulalo Simatupang (https://www.linkedin.com/in/tio-fulalo-simatupang-5b9547210)
-- GitHub: lalosianturi21 (https://github.com/lalosianturi21)
+## 🤝 Kontribusi
+Kontribusi sangat diterima! Jika ingin berkontribusi, silakan:
+1. **Fork** repository ini
+2. Buat **branch** baru (`feature-anda`)
+3. Lakukan **commit** perubahan
+4. Buat **pull request**
+
+---
+
+## 📞 Kontak
+Jika ada pertanyaan, silakan hubungi saya melalui:
+📧 Email: [fulalotio@gmail.com](mailto:fulalotio@gmail.com)  
+💼 LinkedIn: [Tio Fulalo Simatupang](https://www.linkedin.com/in/tio-fulalo-simatupang-5b9547210)  
+🐙 GitHub: [lalosianturi21](https://github.com/lalosianturi21)  
+
+---
+
+✨ Terima kasih telah mengunjungi proyek ini! Jangan lupa untuk memberi **⭐ star** jika bermanfaat! 🚀
+
