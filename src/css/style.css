@@ -509,21 +509,6 @@ span.skills__percentage {
 
 /* ===== CONTACT =====*/
 
-.contact {
-  position: relative;
-}
-
-.contact::after {
-  position: absolute;
-  content: "";
-  width: 1890px;
-  height: 1152px;
-  right: 70px;
-  background: url(../assets/blur3.png);
-  top: -50px;
-  z-index: -10;
-}
-
 .contact__input {
   width: 100%;
   font-size: var(--normal-font-size);
