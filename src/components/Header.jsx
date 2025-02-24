@@ -7,7 +7,7 @@ import '../css/style.css';
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  
+
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const { userInfo } = useSelector((state) => state.user);
@@ -29,17 +29,16 @@ const Header = () => {
 
         <div className={`nav__menu ${menuOpen ? 'show' : ''}`} id='nav-menu'>
           <ul className='nav__list'>
-            {['Home', 'About', 'Skills', 'Projects', 'Contact'].map((item) => (
+            {['home', 'about', 'skills', 'project', 'contact'].map((item) => (
               <li className='nav__item' key={item}>
-                <Link 
-                  to={item === 'Home' ? '/' : '#'} 
-                  className='nav__link' 
-                  onClick={() => item !== 'Home' && document.getElementById(item.toLowerCase()).scrollIntoView({ behavior: 'smooth' })}>
-                  {item}
+                <Link
+                  to={item === 'home' ? '/' : `/${item}`}
+                  className='nav__link'>
+                  {item.charAt(0).toUpperCase() + item.slice(1)}
                 </Link>
               </li>
             ))}
-            
+
             <li className='nav__item'>
               <Link to='#' className='nav__link' onClick={toggleDropdown}>
                 {userInfo ? 'Account' : 'Sign Up'}

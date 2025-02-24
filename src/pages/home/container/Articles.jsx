@@ -5,7 +5,6 @@ import { toast } from 'react-toastify'
 import ErrorMessage from '../../../components/ErrorMessage'
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from 'react-router-dom'
-import ArticleCard from "../../../components/ArticleCard";
 import ProjectCard from "../../../components/ProjectCard";
 
 const Articles = () => {
@@ -39,7 +38,7 @@ const Articles = () => {
             </div>
             </div>
             <Link
-                to="/project"
+                to="/projectall"
                 className="mx-auto flex items-center gap-x-2 font-bold text-primary border-2 border-primary px-6 py-3 rounded-lg"
             >
                 <span>More Projects</span>

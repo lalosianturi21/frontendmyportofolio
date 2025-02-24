@@ -20,6 +20,9 @@ import { BubbleChat } from 'flowise-embed-react';
 import { ToastContainer } from 'react-toastify';
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Skills from './pages/home/container/Skills';
+import Articles from './pages/home/container/Articles';
+import Contact from './pages/home/container/Contact';
 
 function App() {
   useEffect(function () {
@@ -109,11 +112,14 @@ function App() {
       <Routes>
         <Route index path='/' element={<HomePage />} />
         <Route path='/about' element={<About />} />
+        <Route path='/skills' element={<Skills />} />
+        <Route path='/contact' element={<Contact />} />
         <Route path='/login' element={<LoginPage />} />
         <Route path='/register' element={<RegisterPage />} />
         <Route path='/profile' element={<ProfilePage />} />
-        <Route path='/project' element={<ProjectPage />} />
-        <Route path='/project/:slug' element={<ArticleDetailPage />} />
+        <Route path='/project' element={<Articles />} />
+        <Route path='/projectall' element={<ProjectPage />} />
+        <Route path='/projectall/:slug' element={<ArticleDetailPage />} />
         <Route path='/admin' element={<AdminLayout />}>
           <Route index element={<Admin />} />
           <Route path='comments' element={<Comments />} />

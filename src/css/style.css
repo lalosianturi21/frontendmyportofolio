@@ -450,6 +450,7 @@ img {
   justify-content: space-between;
   position: relative;
   overflow: hidden;
+  margin-bottom: 30px;
 }
 
 span.skills__percentage {
@@ -519,9 +520,8 @@ span.skills__percentage {
   height: 1152px;
   right: 70px;
   background: url(../assets/blur3.png);
-  top: -150px;
+  top: -50px;
   z-index: -10;
-  opacity: 1;
 }
 
 .contact__input {
@@ -634,6 +634,7 @@ span.skills__percentage {
 /* Projects Section */
 .myproject {
   position: relative;
+  margin-top: -80px;
 }
 
 .myproject::after {
@@ -646,7 +647,6 @@ span.skills__percentage {
   top: 80px;
   z-index: -10;
   opacity: 1;
-
 }
 
 

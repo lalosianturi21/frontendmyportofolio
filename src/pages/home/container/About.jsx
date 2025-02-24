@@ -5,10 +5,10 @@ import MainLayout from '../../../components/MainLayout';
 
 const About = () => {
   return (
-   <section className='about section' id='about' data-aos="fade-up">
+   <section className='about section' id='about'>
     <h2 className='section-title'>About</h2>
 
-    <div className='about__container bd-grid'>
+    <div className='about__container bd-grid' data-aos="fade-up">
         <div className="about__img">
             <img src={pictureAbout} alt=''></img>
         </div>
