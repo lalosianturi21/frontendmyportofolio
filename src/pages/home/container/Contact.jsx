@@ -31,7 +31,7 @@ const Contact = () => {
 
   return (
     <main>
-      <section className="contact section" id="contact">
+      <section className="contact section" id="contact" data-aos="fade-up">
         <h2 className="section-title">Contact</h2>
 
         <div className="contact__container bd-grid">

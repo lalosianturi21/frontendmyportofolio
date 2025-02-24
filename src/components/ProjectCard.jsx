@@ -9,7 +9,7 @@ const ProjectCard = ({ post }) => {
     return (
         <>
             {/* {projects.map((project) => ( */}
-            <div className="items" >
+            <div className="items" data-aos="fade-up">
                 <div className="left">
                     <div className="img-project">
                         <img src={

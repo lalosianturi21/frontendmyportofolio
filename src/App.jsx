@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
+import { useEffect } from "react";
 import { Toaster } from "react-hot-toast";
 import HomePage from './pages/home/HomePage';
 import About from './pages/home/container/About';
@@ -17,8 +18,13 @@ import Users from "./pages/admin/screens/users/Users";
 import ArticleDetailPage from './pages/articleDetail/ArticleDetailPage';
 import { BubbleChat } from 'flowise-embed-react';
 import { ToastContainer } from 'react-toastify';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  useEffect(function () {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <div className='App font-opensans'>
       {/* Chatbot Flowise */}

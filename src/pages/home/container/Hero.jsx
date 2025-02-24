@@ -5,7 +5,7 @@ import pictureHero from '../../../assets/perfil.png';
 const Hero = () => {
     return (
         <main className='l-main'>
-            <section className='home bd-grid' id="home">
+            <section className='home bd-grid' id="home" data-aos="fade-up">
                 <div className="home__data">
                     <h1 className='home__title'>
                         Hi, <br /> I&apos;m
