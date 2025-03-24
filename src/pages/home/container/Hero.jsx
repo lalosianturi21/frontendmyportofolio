@@ -13,7 +13,7 @@ const Hero = () => {
                         <br /> Web Developer
                     </h1>
                     <a
-                        href="https://wa.me/6289521301996?text=Halo,%20apakah%20ini%20saudara%20Tio?"
+                        href="https://wa.me/6289502028789?text=Halo,%20apakah%20ini%20saudara%20Tio?"
                         className="button"
                         data-aos="fade-up"
                         target="_blank"
