@@ -32,8 +32,8 @@ function App() {
     <div className='App font-opensans'>
       {/* Chatbot Flowise */}
       <BubbleChat
-        chatflowid="103c424e-649f-4b1c-a1d8-d8a7e2f1d4a6"
-        apiHost="https://cca2dlmo.rpcl.host"
+        chatflowid="3efb5cec-b840-4c9b-9b62-fc7a72f21e70"
+        apiHost="https://lalosianturi21-flowiseai.hf.space"
         theme={{
           button: {
             backgroundColor: '#6414fc',
