@@ -3,7 +3,7 @@ import React from 'react';
 // import project2 from '../../../assets/project-2.jpg';
 // import project3 from '../../../assets/project-3.jpg';
 import { images, stables } from '../constants'
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaGlobe } from "react-icons/fa";
 
 const ProjectCard = ({ post }) => {
     return (
@@ -25,6 +25,9 @@ const ProjectCard = ({ post }) => {
                     <div className="buttons">
                         <a href={`${post.github}`} className="primary-btns">
                             <FaGithub className="mr-2" /> Github
+                        </a>
+                        <a href={`${post.demo}`} className="primary-btns">
+                            <FaGlobe className="mr-2" /> Demo
                         </a>
                         <a href={`/projectall/${post.slug}`} className="primary-btns outline external-link">
                             <span>Preview</span>

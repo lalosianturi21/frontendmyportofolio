@@ -40,7 +40,7 @@ const ManagePosts = () => {
       searchKeywordOnSubmitHandler={submitSearchKeywordHandler}
       searchKeywordOnChangeHandler={searchKeywordHandler}
       searchKeyword={searchKeyword}
-      tableHeaderTitleList={["Title", "Github", "Category", "Created At", "Action"]}
+      tableHeaderTitleList={["Title", "Github", "Demo", "Category", "Created At", "Action"]}
       isLoading={isLoading}
       isFetching={isFetching}
       data={postsData?.data}
@@ -76,6 +76,11 @@ const ManagePosts = () => {
           <td className="px-5 py-5 text-sm border-b ">
               <div className="">
                 <p className="text-gray-900 whitespace-no-wrap">{post.github}</p>
+              </div>
+              </td>
+              <td className="px-5 py-5 text-sm border-b ">
+              <div className="">
+                <p className="text-gray-900 whitespace-no-wrap">{post.demo}</p>
               </div>
               </td>
           <td className="px-5 py-5 text-sm  border-b ">

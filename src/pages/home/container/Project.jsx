@@ -19,6 +19,7 @@ const Project = () => {
                                 <p className="project-desc">{project.description}</p>
                                 <div className="buttons">
                                     <a href="#" className="primary-btns">Github</a>
+                                    <a href="#" className="primary-btns">Demo</a>
                                     <a href="#" className="primary-btns outline external-link">
                                         <Link to={`/blog/${post.slug}`}><span>Preview</span></Link>
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">

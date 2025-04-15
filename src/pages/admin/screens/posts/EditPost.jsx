@@ -36,6 +36,7 @@ const EditPost = () => {
   const [postSlug, setPostSlug] = useState(slug);
   const [caption, setCaption] = useState("");
   const [github, setGithub] = useState("");
+  const [demo, setDemo] = useState("");
 
   const { data, isLoading, isError } = useQuery({
     queryFn: () => getSinglePost({ slug }),
@@ -46,6 +47,7 @@ const EditPost = () => {
       setTitle(data.title);
       setCaption(data.caption);
       setGithub(data.github);
+      setDemo(data.demo);
     },
     refetchOnWindowFocus: false,
   });
@@ -91,7 +93,7 @@ const EditPost = () => {
   
     updatedData.append(
       "document",
-      JSON.stringify({ body, categories, title, slug: postSlug, caption, github})
+      JSON.stringify({ body, categories, title, slug: postSlug, caption, github, demo})
     );
   
     mutateUpdatePostDetail({
@@ -139,6 +141,11 @@ const EditPost = () => {
           <div>
             <label className="block text-lg font-semibold">Github</label>
             <input type="text" className="w-full p-2 border rounded-md" value={github} onChange={(e) => setGithub(e.target.value)} />
+          </div>
+
+          <div>
+            <label className="block text-lg font-semibold">Demo</label>
+            <input type="text" className="w-full p-2 border rounded-md" value={demo} onChange={(e) => setDemo(e.target.value)} />
           </div>
 
           <div>
