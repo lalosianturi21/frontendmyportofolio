@@ -8,7 +8,7 @@ import NavItem from "./NavItem";
 import NavItemCollapse from "./NavItemCollapse";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { useSelector } from "react-redux";
-import { createJurnal } from "../../../../services/index/jurnals";
+import { createPost } from "../../../../services/index/posts";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { images } from "../../../../constants";
@@ -21,16 +21,16 @@ const Header = () => {
   const [activeNavName, setActiveNavName] = useState("dashboard");
   const windowSize = useWindowSize();
 
-  const { mutate: mutateCreateJurnal, isLoading: isLoadingCreateJurnal } = useMutation({
-    mutationFn: ({ slug, token }) => createJurnal({ token }),
+  const { mutate: mutateCreatePost, isLoading: isLoadingCreatePost } = useMutation({
+    mutationFn: ({ slug, token }) => createPost({ token }),
     onSuccess: (data) => {
-      queryClient.invalidateQueries(["jurnals"]);
-      toast.success("Jurnal is created, edit that now! 🎉", { autoClose: 3000 });
-      navigate(`/admin/jurnals/manage/edit/${data.slug}`);
+      queryClient.invalidateQueries(["posts"]);
+      toast.success("Post is created, edit that now! 🎉", { autoClose: 3000 });
+      navigate(`/admin/posts/manage/edit/${data.slug}`);
     },
     onError: (error) => {
-      toast.error(error.message || "Failed to create jurnal.");
-      console.error("Jurnal creation error:", error);
+      toast.error(error.message || "Failed to create post.");
+      console.error("Post creation error:", error);
     },
   });
 
@@ -38,12 +38,12 @@ const Header = () => {
     setIsMenuActive((prev) => !prev);
   };
 
-  const handleCreateNewJurnal = () => {
+  const handleCreateNewPost = () => {
     if (!userState?.userInfo?.token) {
       toast.error("User is not authenticated.");
       return;
     }
-    mutateCreateJurnal({ token: userState.userInfo.token });
+    mutateCreatePost({ token: userState.userInfo.token });
   };
 
   return (
@@ -82,16 +82,16 @@ const Header = () => {
                 <NavItem title="Dashboard" link="/admin" icon={<AiFillDashboard className="text-xl" />} name="dashboard" activeNavName={activeNavName} setActiveNavName={setActiveNavName} />
                 <NavItem title="Comments" link="/admin/comments" icon={<FaComments className="text-xl" />} name="comments" activeNavName={activeNavName} setActiveNavName={setActiveNavName} />
 
-                <NavItemCollapse title="Projects" icon={<MdDashboard className="text-xl" />} name="jurnals" activeNavName={activeNavName} setActiveNavName={setActiveNavName}>
-                  <Link to="/admin/jurnals/manage" className="flex items-center gap-2 px-4 py-2 text-[15px] font-medium text-gray-700 rounded-md transition">
+                <NavItemCollapse title="Projects" icon={<MdDashboard className="text-xl" />} name="posts" activeNavName={activeNavName} setActiveNavName={setActiveNavName}>
+                  <Link to="/admin/posts/manage" className="flex items-center gap-2 px-4 py-2 text-[15px] font-medium text-gray-700 rounded-md transition">
                     <span className="text-lg">📋</span> Manage all projects
                   </Link>
 
                   <button
-                    disabled={isLoadingCreateJurnal}
+                    disabled={isLoadingCreatePost}
                     className={`button-addpost flex items-center gap-1.5 px-4 py-2 text-[15px] font-medium rounded-md transition w-full text-left
-                      ${isLoadingCreateJurnal ? "bg-gray-300 text-gray-500 cursor-not-allowed" : "text-gray-700"}`}
-                    onClick={handleCreateNewJurnal}
+                      ${isLoadingCreatePost ? "bg-gray-300 text-gray-500 cursor-not-allowed" : "text-gray-700"}`}
+                    onClick={handleCreateNewPost}
                   >
                     <span className="text-lg">✨</span> Add New Project
                   </button>

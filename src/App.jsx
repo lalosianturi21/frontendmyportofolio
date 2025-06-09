@@ -39,7 +39,7 @@ function App() {
             backgroundColor: '#6414fc',
             right: 20,
             bottom: 20,
-            size: 48, // small | medium | large | number
+            size: 48, 
             dragAndDrop: true,
             iconColor: 'white',
             customIconSrc: 'https://img.icons8.com/material-outlined/24/FFFFFF/message-bot.png'
