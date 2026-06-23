@@ -36,14 +36,14 @@ const About = () => {
           <div data-aos="fade-down" data-aos-delay="200" className="flex flex-col gap-4 text-base font-medium leading-relaxed text-gray-800">
 
             <p>
-              Hi, I'm <span className="font-bold">Tio Fulalo</span>, a Bachelor of Informatics Engineering graduate with a strong passion for technology and digital innovation. I specialize in web and mobile application development, including AI-based solutions, and have hands-on experience with modern development tools and frameworks.
+              Hi, I'm <span className="font-bold">Tio Fulalo</span>, Top Graduate Bachelor of Informatics Engineering from Universitas Prima Indonesia with a perfect GPA of 4.00/4.00, driven by a strong passion for technology and IT solutions. I possess hands-on experience in full-stack web development, intuitive UI/UX design, and IT infrastructure digitalization within both corporate and public sectors.
             </p>
             <p>
-              I have contributed to multiple real-world projects, such as building responsive company profile websites, developing web-based health screening systems, and supporting IT infrastructure and digitalization initiatives. My expertise includes UI/UX design, full-stack development (using MySQL and MongoDB for database management), and data visualization, ensuring that every product is both functional and user-centered.
+              Throughout my professional internships, I have successfully built responsive company websites, developed web-based health screening systems, and visualized complex data into actionable dashboards to support decision-making. Proficient in modern frameworks (including Laravel, React JS, and Node JS) and database management (MySQL, MongoDB, and PostgreSQL), I also bring technical insights into AI implementation, backed by a SINTA 2 indexed publication.
             </p>
 
             <p>
-              I believe that great digital products are not just visually appealing, but also solve real problems efficiently. With a strong understanding of the software development life cycle and a commitment to continuous learning, I strive to create impactful and innovative solutions.
+              I am a detail-oriented, highly adaptive professional who bridges technical capabilities with structured data management to deliver innovative, efficient, and user-centric digital solutions.
             </p>
           </div>
         </div>
